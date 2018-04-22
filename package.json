@@ -1,0 +1,34 @@
+{
+	"name": "dummy",
+	"version": "1.0.0",
+	"description": "This is a dummy description",
+	"main": "",
+	"dependencies": {
+		"browser-sync": "^2.23.6",
+		"gulp": "^3.9.1",
+		"gulp-asset-version": "^0.1.1",
+		"gulp-concat": "^2.6.1",
+		"gulp-htmlmin": "^4.0.0",
+		"gulp-inject-partials": "^1.0.3",
+		"gulp-jsmin": "^0.1.5",
+		"gulp-less": "^3.4.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^1.2.2",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {
+		"gulp-assets-version-replace": "^2.2.1",
+		"gulp-cssmin": "^0.2.0",
+		"gulp-html-assets": "0.0.14"
+	},
+	"repository": {
+		"type": "",
+		"url": ""
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "MIT",
+	"readme": "This is a dummy readme"
+}

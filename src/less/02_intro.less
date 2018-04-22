@@ -1,0 +1,1109 @@
+//Intro section
+.intro{
+  width: 100%;
+
+  position: relative;
+  min-height: 650px;
+
+  &:before{
+
+  }
+  .back_image{
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #changing_text {
+
+    z-index: 1;
+    text-align: center;
+    font-size: 2.25em;
+    font-family:monospace;
+    color: white;
+    padding: 0.45em 0.5em;
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+    align-items: center;
+    padding-left: 20px;
+
+    width: 100%;
+    .animated1;
+    .dud {
+      color: lighten(gray,20%);
+      .animated1;
+    }
+  }
+
+
+  .intro_text{
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .logo_dero_intro{
+    .animated5;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 112px;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 0;
+    img{
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  .container{
+    position: relative;
+  }
+}
+
+
+
+
+
+
+
+.manifesto{
+  min-height: 150px;
+}
+
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+  position: relative;
+text-align: center;
+  height: 300px;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+
+
+  .circle{.animated2;}
+  .orbits:hover{
+
+
+
+    .logo_dero_intro{
+      transform: scale(1.1) rotate(-270deg);
+      img {
+        background-color: fade(#010101,60%);
+      }
+    }
+
+    cursor: not-allowed;
+    .circle{
+      -webkit-animation: rotating 2s linear infinite;
+      animation: rotating 2s linear infinite;
+      &.outer-orbit-cirlces{
+        border-radius: 0;
+        transform: scale(1.3);
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 20px 10px;
+        border-color: transparent transparent fade(white,85%) transparent;
+      }
+      &.middle-orbit-cirlces{
+        border-radius: 0;
+        transform: scale(1.3);
+        background-color: fade(white,65%);;
+      }
+      &.inner-orbit-cirlces{
+        background-color: transparent;
+        &:before{
+          position: absolute;
+          top: -50%;
+          font-weight: bold;
+          font-size: 2.2em;
+          transform: scale(1.2);
+          left: -0px;
+          content: 'X';
+          background-color: transparent;
+          color: fade(white,85%);
+        }
+
+      }
+
+
+
+    }
+    .orbit{
+      border-color: white;
+      border-style: dotted;
+
+
+    }
+  }
+
+
+
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  width: 150px;
+  height: 150px;
+  border: 4px fade(white,90%) dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.inner-orbit-cirlces {
+  position: absolute;
+  top: 62px;
+  left: -12px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: fade(white,100%) ;
+}
+
+
+
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 225px;
+  height: 225px;
+  border: 2px fade(white,70%)  dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.middle-orbit-cirlces {
+  position: absolute;
+  top: 25px;
+  left: 17px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: fade(lightgray,90%) ;
+}
+
+/* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+#outer-orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 294px;
+  height: 294px;
+  border: 2px fade(white,20%)  dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 20s linear infinite;
+}
+
+/* ---------- Repeating styles for the outer orbiting circles ---------- */
+.outer-orbit-cirlces {
+  position: absolute;
+  top: -17px;
+  left: 125px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+
+#main_centerorbit{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: 50px;
+  border: 3px fade(lightgray,50%)  dashed;
+  border-radius: 100%;
+  background-color: fade(white,0%);
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+}
+#main_centerorbit_circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: 30px;
+  border-radius: 100%;
+  background-color: fade(black,60%);
+  animation:  pulseshadow 8s infinite;
+  box-shadow: 0 0 0 rgba(255,255,255, 0.4);
+  display: block;
+  @-webkit-keyframes pulseshadow {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.6);
+
+    }
+    70% {
+      -webkit-box-shadow: 0 0 0 30px rgba(255,255,255, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+  }
+  @keyframes pulseshadow {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.6);
+
+    }
+    70% {
+      -webkit-box-shadow: 0 0 0 40px rgba(255,255,255, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+  }
+}
+
+
+
+//line to the bottom
+.path_to_city{
+  position: absolute;
+  top:45%;
+  right: -55%;
+  width: 55%;
+  height: 100%;
+
+  //border: 2px dashed white;
+
+  background: linear-gradient(90deg, fade(lightgray,50%) 50%, transparent 50%);
+
+  background-repeat: repeat-x;
+  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+
+
+  padding: 5px;
+  transition: background-position 1s;
+  -webkit-animation: spin-border 10s linear infinite;
+  animation: spin-border 10s linear infinite;
+
+  &.vert{
+    transform: rotate(90deg);
+    height: 10%;
+    width: 40%;
+    top: 85%;
+    right: -90%;
+    .lock_ico{
+      position: absolute;
+      top: 0%;
+      left: 0;
+      margin-left: -30px;
+      margin-top: -15px;
+      opacity: 0.9;
+      left: 90%;
+      .ico{
+        //lock icon
+        position: absolute;
+        left: px;
+        margin: 10px 0px;
+        font-size: 2.5em;
+        display: inline-block;
+        transform: rotate(-90deg) scale(2.3);
+      }
+
+      .lock_open{
+
+      }
+
+    }
+  }
+
+
+
+
+  .path_to_city_right {
+    position: absolute;
+    top: 20px;
+    right: -175%;
+    width: 110%;
+    height: 20px;
+
+    //border: 2px dashed white;
+
+    background: linear-gradient(90deg, fade(lightgray, 50%) 50%, transparent 50%);
+
+    background-repeat: repeat-x;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+
+    padding: 5px;
+    transition: background-position 1s;
+    -webkit-animation: spin-border 10s linear infinite;
+    animation: spin-border 10s linear infinite;
+    transform: rotate(180deg);
+  }
+}
+
+
+@keyframes spin-border{
+  100% {
+    background-position: 212px 0px;
+  }
+}
+@-webkit-keyframes spin-border{
+  100% {
+    background-position: 212px 0px;
+  }
+}
+
+@keyframes spin-border-right{
+  100% {
+    background-position: 0px 212px;
+  }
+}
+@-webkit-keyframes spin-border-right{
+  100% {
+    background-position: 0px 212px
+  }
+}
+
+
+/* ---------- Animation ---------- */
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@media all and (max-width: 1200px) {
+  #circle-orbit-container {
+    left: 50%;
+    margin-left: -150px;
+    min-height: 450px;
+  }
+  .path_to_city{
+    display: none;
+  }
+  .box {
+    display: none!important;
+  }
+  #main_centerorbit{
+    display: none!important;
+  }
+  #main_centerorbit_circle{
+    display: none!important;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//laptop
+/*.box {
+  display: block;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  margin-top: 0%;
+  top: 90px;
+  right: 50px;
+  position: absolute;
+  &:hover{
+    animation: levitate 1.7s alternate ease-in-out infinite;
+    .bottom-box{
+      animation: levitate-shadow 1.7s alternate ease-in-out infinite;
+    }
+  }
+  .computer-top {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    top: 15%;
+    background-color: darken(white, 10%);
+    border-radius: 4px 4px 0 0;
+    border:1px dashed black;
+  }
+
+  .camera {
+    position: absolute;
+    top: 3.5%;
+    left: 47%;
+    width: 3%;
+    height: 4%;
+    background: #222;
+    border-radius: 50%;
+  }
+
+  .screen {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 80%;
+    top: 10%;
+    background: #222;
+    overflow: hidden;
+  }
+
+  .code {
+    position: absolute;
+    width: 92%;
+    height: 400%;
+    padding: 4%;
+    animation: slide 2.5s linear infinite;
+    top: 0%;
+  }
+
+  .line {
+    width: 30%;
+    height: 1%;
+    background: #fff;
+    margin-bottom: 4%;
+    border-radius: 50px;
+  }
+
+  .line02, .line03, .line04, .line06, .line07, .line08, .line10, .line11, .line12, .line14, .line15 {
+    margin-left: 10%;
+  }
+
+  .computer-bottom {
+    position: absolute;
+    width: 37.5%;
+    height: 10%;
+    left: 31.2%;
+    top: 45%;
+    background-color: darken(white,10%);
+    -webkit-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+    box-shadow: 10px 5px 20px lighten(black,96%);
+  }
+
+  .keyboard {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 5%;
+    background-color: darken(white, 0%);
+    -webkit-clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+  }
+
+  .bottom-box {
+    position: absolute;
+    width: 37.5%;
+    left: 31.2%;
+    height: 2%;
+    top: 55%;
+    background-color: darken(white,30%);
+  }
+
+  @keyframes slide {
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: -40%;
+    }
+  }
+  @keyframes levitate {
+    0% {
+      transform: translate(0, 0px);
+    }
+    100% {
+      transform: translate(0, -20px)
+    }
+  }
+  @keyframes levitate-shadow {
+    0% {
+      box-shadow: 0 0 0px lighten(black,80%);
+    }
+    100% {
+      box-shadow: 0 5px 30px lighten(black,90%);
+    }
+  }
+}
+
+
+*/
+
+
+@keyframes revolve {
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes spherecircles {
+  0%   {
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+
+  }
+  50%  {
+    border-color: rgba(255, 255, 245, 0.4);
+    border-style: dashed;
+    border-width: 6px;
+  }
+
+  100% {
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 1px;
+  }
+}
+
+
+#container {
+  position: absolute;
+  right: 150px;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  perspective: 1000px;
+  perspective-origin: 20% 30%;
+  transform-style: preserve-3d;
+  filter:grayscale(100%);
+  .animated2;
+  &:hover{
+    transform: scale(1.1);
+    #sphere div{
+
+      padding: 20px;
+      animation: spherecircles 3s infinite linear;
+    }
+  }
+
+}
+
+#sphere {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  animation: revolve 10s infinite linear;
+  div{
+    .animated2;
+  }
+}
+
+.sphere_circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform-origin: center;
+
+}
+
+#c0 {
+  border: 3px solid rgba(5, 200, 100, 0.5);
+  transform: rotateY(0deg);
+}
+
+#c1 {
+  border: 3px solid rgba(5, 199, 101, 0.5);
+  transform: rotateY(2deg);
+}
+
+#c2 {
+  border: 3px solid rgba(5, 198, 102, 0.5);
+  transform: rotateY(4deg);
+}
+
+#c3 {
+  border: 3px solid rgba(5, 197, 103, 0.5);
+  transform: rotateY(6deg);
+}
+
+#c4 {
+  border: 3px solid rgba(5, 196, 104, 0.5);
+  transform: rotateY(8deg);
+}
+
+#c5 {
+  border: 3px solid rgba(5, 195, 105, 0.5);
+  transform: rotateY(10deg);
+}
+
+#c6 {
+  border: 3px solid rgba(5, 194, 106, 0.5);
+  transform: rotateY(12deg);
+}
+
+#c7 {
+  border: 3px solid rgba(4, 193, 107, 0.5);
+  transform: rotateY(14deg);
+}
+
+#c8 {
+  border: 3px solid rgba(4, 192, 108, 0.5);
+  transform: rotateY(16deg);
+}
+
+#c9 {
+  border: 3px solid rgba(4, 191, 109, 0.5);
+  transform: rotateY(18deg);
+}
+
+#c10 {
+  border: 3px solid rgba(4, 190, 110, 0.5);
+  transform: rotateY(20deg);
+}
+
+#c11 {
+  border: 3px solid rgba(4, 189, 111, 0.5);
+  transform: rotateY(22deg);
+}
+
+#c12 {
+  border: 3px solid rgba(4, 188, 112, 0.5);
+  transform: rotateY(24deg);
+}
+
+#c13 {
+  border: 3px solid rgba(4, 187, 113, 0.5);
+  transform: rotateY(26deg);
+}
+
+#c14 {
+  border: 3px solid rgba(4, 186, 114, 0.5);
+  transform: rotateY(28deg);
+}
+
+#c15 {
+  border: 3px solid rgba(4, 185, 115, 0.5);
+  transform: rotateY(30deg);
+}
+
+#c16 {
+  border: 3px solid rgba(4, 184, 116, 0.5);
+  transform: rotateY(32deg);
+}
+
+#c17 {
+  border: 3px solid rgba(4, 183, 117, 0.5);
+  transform: rotateY(34deg);
+}
+
+#c18 {
+  border: 3px solid rgba(4, 182, 118, 0.5);
+  transform: rotateY(36deg);
+}
+
+#c19 {
+  border: 3px solid rgba(4, 181, 119, 0.5);
+  transform: rotateY(38deg);
+}
+
+#c20 {
+  border: 3px solid rgba(4, 180, 120, 0.5);
+  transform: rotateY(40deg);
+}
+
+#c21 {
+  border: 3px solid rgba(4, 179, 121, 0.5);
+  transform: rotateY(42deg);
+}
+
+#c22 {
+  border: 3px solid rgba(4, 178, 122, 0.5);
+  transform: rotateY(44deg);
+}
+
+#c23 {
+  border: 3px solid rgba(3, 177, 123, 0.5);
+  transform: rotateY(46deg);
+}
+
+#c24 {
+  border: 3px solid rgba(3, 176, 124, 0.5);
+  transform: rotateY(48deg);
+}
+
+#c25 {
+  border: 3px solid rgba(3, 175, 125, 0.5);
+  transform: rotateY(50deg);
+}
+
+#c26 {
+  border: 3px solid rgba(3, 174, 126, 0.5);
+  transform: rotateY(52deg);
+}
+
+#c27 {
+  border: 3px solid rgba(3, 173, 127, 0.5);
+  transform: rotateY(54deg);
+}
+
+#c28 {
+  border: 3px solid rgba(3, 172, 128, 0.5);
+  transform: rotateY(56deg);
+}
+
+#c29 {
+  border: 3px solid rgba(3, 171, 129, 0.5);
+  transform: rotateY(58deg);
+}
+
+#c30 {
+  border: 3px solid rgba(3, 170, 130, 0.5);
+  transform: rotateY(60deg);
+}
+
+#c31 {
+  border: 3px solid rgba(3, 169, 131, 0.5);
+  transform: rotateY(62deg);
+}
+
+#c32 {
+  border: 3px solid rgba(3, 168, 132, 0.5);
+  transform: rotateY(64deg);
+}
+
+#c33 {
+  border: 3px solid rgba(3, 167, 133, 0.5);
+  transform: rotateY(66deg);
+}
+
+#c34 {
+  border: 3px solid rgba(3, 166, 134, 0.5);
+  transform: rotateY(68deg);
+}
+
+#c35 {
+  border: 3px solid rgba(3, 165, 135, 0.5);
+  transform: rotateY(70deg);
+}
+
+#c36 {
+  border: 3px solid rgba(3, 164, 136, 0.5);
+  transform: rotateY(72deg);
+}
+
+#c37 {
+  border: 3px solid rgba(3, 163, 137, 0.5);
+  transform: rotateY(74deg);
+}
+
+#c38 {
+  border: 3px solid rgba(3, 162, 138, 0.5);
+  transform: rotateY(76deg);
+}
+
+#c39 {
+  border: 3px solid rgba(3, 161, 139, 0.5);
+  transform: rotateY(78deg);
+}
+
+#c40 {
+  border: 3px solid rgba(3, 160, 140, 0.5);
+  transform: rotateY(80deg);
+}
+
+#c41 {
+  border: 3px solid rgba(3, 159, 141, 0.5);
+  transform: rotateY(82deg);
+}
+
+#c42 {
+  border: 3px solid rgba(3, 158, 142, 0.5);
+  transform: rotateY(84deg);
+}
+
+#c43 {
+  border: 3px solid rgba(3, 157, 143, 0.5);
+  transform: rotateY(86deg);
+}
+
+#c44 {
+  border: 3px solid rgba(3, 156, 144, 0.5);
+  transform: rotateY(88deg);
+}
+
+#c45 {
+  border: 3px solid rgba(3, 155, 145, 0.5);
+  transform: rotateY(90deg);
+}
+
+#c46 {
+  border: 3px solid rgba(3, 154, 146, 0.5);
+  transform: rotateY(92deg);
+}
+
+#c47 {
+  border: 3px solid rgba(3, 153, 147, 0.5);
+  transform: rotateY(94deg);
+}
+
+#c48 {
+  border: 3px solid rgba(3, 152, 148, 0.5);
+  transform: rotateY(96deg);
+}
+
+#c49 {
+  border: 3px solid rgba(3, 151, 149, 0.5);
+  transform: rotateY(98deg);
+}
+
+#c50 {
+  border: 3px solid rgba(3, 150, 150, 0.5);
+  transform: rotateY(100deg);
+}
+
+#c51 {
+  border: 3px solid rgba(3, 149, 151, 0.5);
+  transform: rotateY(102deg);
+}
+
+#c52 {
+  border: 3px solid rgba(3, 148, 152, 0.5);
+  transform: rotateY(104deg);
+}
+
+#c53 {
+  border: 3px solid rgba(2, 147, 153, 0.5);
+  transform: rotateY(106deg);
+}
+
+#c54 {
+  border: 3px solid rgba(2, 146, 154, 0.5);
+  transform: rotateY(108deg);
+}
+
+#c55 {
+  border: 3px solid rgba(2, 145, 155, 0.5);
+  transform: rotateY(110deg);
+}
+
+#c56 {
+  border: 3px solid rgba(2, 144, 156, 0.5);
+  transform: rotateY(112deg);
+}
+
+#c57 {
+  border: 3px solid rgba(2, 143, 157, 0.5);
+  transform: rotateY(114deg);
+}
+
+#c58 {
+  border: 3px solid rgba(2, 142, 158, 0.5);
+  transform: rotateY(116deg);
+}
+
+#c59 {
+  border: 3px solid rgba(2, 141, 159, 0.5);
+  transform: rotateY(118deg);
+}
+
+#c60 {
+  border: 3px solid rgba(2, 140, 160, 0.5);
+  transform: rotateY(120deg);
+}
+
+#c61 {
+  border: 3px solid rgba(2, 139, 161, 0.5);
+  transform: rotateY(122deg);
+}
+
+#c62 {
+  border: 3px solid rgba(2, 138, 162, 0.5);
+  transform: rotateY(124deg);
+}
+
+#c63 {
+  border: 3px solid rgba(2, 137, 163, 0.5);
+  transform: rotateY(126deg);
+}
+
+#c64 {
+  border: 3px solid rgba(2, 136, 164, 0.5);
+  transform: rotateY(128deg);
+}
+
+#c65 {
+  border: 3px solid rgba(2, 135, 165, 0.5);
+  transform: rotateY(130deg);
+}
+
+#c66 {
+  border: 3px solid rgba(2, 134, 166, 0.5);
+  transform: rotateY(132deg);
+}
+
+#c67 {
+  border: 3px solid rgba(2, 133, 167, 0.5);
+  transform: rotateY(134deg);
+}
+
+#c68 {
+  border: 3px solid rgba(2, 132, 168, 0.5);
+  transform: rotateY(136deg);
+}
+
+#c69 {
+  border: 3px solid rgba(2, 131, 169, 0.5);
+  transform: rotateY(138deg);
+}
+
+#c70 {
+  border: 3px solid rgba(2, 130, 170, 0.5);
+  transform: rotateY(140deg);
+}
+
+#c71 {
+  border: 3px solid rgba(2, 129, 171, 0.5);
+  transform: rotateY(142deg);
+}
+
+#c72 {
+  border: 3px solid rgba(2, 128, 172, 0.5);
+  transform: rotateY(144deg);
+}
+
+#c73 {
+  border: 3px solid rgba(2, 127, 173, 0.5);
+  transform: rotateY(146deg);
+}
+
+#c74 {
+  border: 3px solid rgba(2, 126, 174, 0.5);
+  transform: rotateY(148deg);
+}
+
+#c75 {
+  border: 3px solid rgba(2, 125, 175, 0.5);
+  transform: rotateY(150deg);
+}
+
+#c76 {
+  border: 3px solid rgba(2, 124, 176, 0.5);
+  transform: rotateY(152deg);
+}
+
+#c77 {
+  border: 3px solid rgba(2, 123, 177, 0.5);
+  transform: rotateY(154deg);
+}
+
+#c78 {
+  border: 3px solid rgba(2, 122, 178, 0.5);
+  transform: rotateY(156deg);
+}
+
+#c79 {
+  border: 3px solid rgba(2, 121, 179, 0.5);
+  transform: rotateY(158deg);
+}
+
+#c80 {
+  border: 3px solid rgba(2, 120, 180, 0.5);
+  transform: rotateY(160deg);
+}
+
+#c81 {
+  border: 3px solid rgba(2, 119, 181, 0.5);
+  transform: rotateY(162deg);
+}
+
+#c82 {
+  border: 3px solid rgba(2, 118, 182, 0.5);
+  transform: rotateY(164deg);
+}
+
+#c83 {
+  border: 3px solid rgba(2, 117, 183, 0.5);
+  transform: rotateY(166deg);
+}
+
+#c84 {
+  border: 3px solid rgba(2, 116, 184, 0.5);
+  transform: rotateY(168deg);
+}
+
+#c85 {
+  border: 3px solid rgba(2, 115, 185, 0.5);
+  transform: rotateY(170deg);
+}
+
+#c86 {
+  border: 3px solid rgba(2, 114, 186, 0.5);
+  transform: rotateY(172deg);
+}
+
+#c87 {
+  border: 3px solid rgba(2, 113, 187, 0.5);
+  transform: rotateY(174deg);
+}
+
+#c88 {
+  border: 3px solid rgba(2, 112, 188, 0.5);
+  transform: rotateY(176deg);
+}
+
+#c89 {
+  border: 3px solid rgba(2, 111, 189, 0.5);
+  transform: rotateY(178deg);
+}
