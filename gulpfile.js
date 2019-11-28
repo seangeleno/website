@@ -88,6 +88,15 @@ gulp.task('browserSync', function() {
             "./dist/**/*.*"],
         server: {
             baseDir: "./dist"
+        },
+        open: false,
+        ui: false,
+        notify: false,
+        https: false,
+        ghostMode: {
+            clicks: false,
+            forms: false,
+            scroll: false
         }
     });
 });

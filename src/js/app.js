@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    if (window.location.protocol == "http:" && window.location.hostname!='localhost') {
-        window.location = document.URL.replace("http://", "https://");
-    }
+  //  if (window.location.protocol == "http:" && window.location.hostname!='localhost') {
+    //    window.location = document.URL.replace("http://", "https://");
+   // }
 
     //scroll logic header title
     $(window).scroll(function(i){
